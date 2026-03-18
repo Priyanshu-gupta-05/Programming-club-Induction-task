@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Study Room Booking </title>
+<link rel="Stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="head">STUDYSPACE</div>
+
+</header>
+<header>
+<h1>Study Room Booking</h1><br>
+
+<div class="controls">
+<input type="date" id="datePicker">
+<select id="capacityFilter">
+<option value="all">All Capacities</option>
+<option value="4">4+</option>
+<option value="6">6+</option>
+<option value="8">8+</option>
+</select>
+
+<button id="darkToggle">Dark Mode</button>
+</div>
+</header>
+<p id="text">Select a date, pick a room, claim your slot.</p>
+<div class="container">
+
+<div id="rooms"></div>
+
+<div class="summary">
+<h2>Bookings</h2>
+<ul id="bookingList"></ul>
+<button id="clearBookings">Clear All</button>
+</div>
+
+</div>
+
+<div id="modal" class="modal hidden">
+<div class="modal-content">
+<p id="modalText"></p>
+<button id="confirmBooking">Confirm</button>
+<button id="cancelModal">Cancel</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
